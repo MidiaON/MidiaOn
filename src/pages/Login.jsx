@@ -1,7 +1,6 @@
 // Página: Login.jsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css'; // opcional, caso tenha estilos
 
 export default function Login() {
   const [username, setUsername] = useState('');
