@@ -1,4 +1,3 @@
-
 {
   "name": "midiaon",
   "version": "1.0.0",
@@ -15,6 +14,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^4.5.0"
+    "vite": "^4.5.13"
   }
 }

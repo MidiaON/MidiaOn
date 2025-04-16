@@ -1,6 +1,7 @@
 // Página: Login.jsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -10,6 +11,7 @@ export default function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
+    // Validação local (sem backend)
     if (username === 'lider' && password === 'senha123') {
       navigate('/dashboard-lider');
     } else if (username === 'pastor' && password === 'senha456') {
@@ -17,13 +19,13 @@ export default function Login() {
     } else if (username === 'membro' && password === 'senha789') {
       navigate('/dashboard-membro');
     } else {
-      alert('Usuário ou senha incorretos!');
+      alert('Usuário ou senha inválidos');
     }
   };
 
   return (
     <div className="login-container">
-      <h1>Login</h1>
+      <h2>Login - MídiaON</h2>
       <form onSubmit={handleLogin}>
         <input
           type="text"
